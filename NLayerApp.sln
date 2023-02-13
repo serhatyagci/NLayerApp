@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayer.Repository", "NLayer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayer.Service", "NLayer.Service\NLayer.Service.csproj", "{5B9C65AA-5257-4C47-ACFC-19DDC15315BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayer.API", "NLayer.API\NLayer.API.csproj", "{09BE1EE1-80EA-49F7-9F1D-D3104A3C701F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayer.Web", "NLayer.Web\NLayer.Web.csproj", "{CDFCBA28-4BF2-44CF-8CBC-35F0E4319AB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayer.Web", "NLayer.Web\NLayer.Web.csproj", "{CDFCBA28-4BF2-44CF-8CBC-35F0E4319AB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayer.Caching", "NLayer.Caching\NLayer.Caching.csproj", "{A0B24EFC-08FB-4209-A907-8AAF76E48600}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayer.Caching", "NLayer.Caching\NLayer.Caching.csproj", "{A0B24EFC-08FB-4209-A907-8AAF76E48600}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayer.API", "NLayer.API\NLayer.API.csproj", "{8CCEDAAC-BFA8-4845-8DAA-51E40C4F4299}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +33,6 @@ Global
 		{5B9C65AA-5257-4C47-ACFC-19DDC15315BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B9C65AA-5257-4C47-ACFC-19DDC15315BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B9C65AA-5257-4C47-ACFC-19DDC15315BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{09BE1EE1-80EA-49F7-9F1D-D3104A3C701F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{09BE1EE1-80EA-49F7-9F1D-D3104A3C701F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{09BE1EE1-80EA-49F7-9F1D-D3104A3C701F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{09BE1EE1-80EA-49F7-9F1D-D3104A3C701F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CDFCBA28-4BF2-44CF-8CBC-35F0E4319AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CDFCBA28-4BF2-44CF-8CBC-35F0E4319AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDFCBA28-4BF2-44CF-8CBC-35F0E4319AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{A0B24EFC-08FB-4209-A907-8AAF76E48600}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0B24EFC-08FB-4209-A907-8AAF76E48600}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0B24EFC-08FB-4209-A907-8AAF76E48600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CCEDAAC-BFA8-4845-8DAA-51E40C4F4299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CCEDAAC-BFA8-4845-8DAA-51E40C4F4299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CCEDAAC-BFA8-4845-8DAA-51E40C4F4299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CCEDAAC-BFA8-4845-8DAA-51E40C4F4299}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

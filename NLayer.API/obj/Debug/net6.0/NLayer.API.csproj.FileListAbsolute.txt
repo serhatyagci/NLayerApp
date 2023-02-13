@@ -9,12 +9,6 @@ C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\Microsof
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\NLayer.Core.dll
-C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\NLayer.Repository.dll
-C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\NLayer.Service.dll
-C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\NLayer.Service.pdb
-C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\NLayer.Core.pdb
-C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\NLayer.Repository.pdb
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\obj\Debug\net6.0\NLayer.API.csproj.AssemblyReference.cache
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\obj\Debug\net6.0\NLayer.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\obj\Debug\net6.0\NLayer.API.AssemblyInfoInputs.cache
