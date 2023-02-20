@@ -27,6 +27,25 @@ namespace NLayer.Repository
             //configurationlar burada topanır.
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly()); //tüm configuration kullanan classları okur ve çalışılan assembly taranır.
             //modelBuilder.ApplyConfiguration(new ProductConfiguration());  //tek tek bu şekilde de tanımlanabilir.
+
+            //seed işlemi bu şekilde de yapılabilir.(doğru olan best practies açısından burası kirlenmemelidir.)
+            modelBuilder.Entity<ProductFeature>().HasData(new ProductFeature()
+            {
+                id = 1,
+                Color = "Kırmızı",
+                Height= 100,
+                Width= 200,
+                ProductId= 1,
+            },
+            new ProductFeature()
+            {
+                id = 2,
+                Color = "Mavi",
+                Height = 300,
+                Width = 400,
+                ProductId = 2,
+            });
+
             base.OnModelCreating(modelBuilder);
         }
     }

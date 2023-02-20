@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 
 namespace NLayer.Repository.Configuration
 {
-    internal class CategoryConfigration : IEntityTypeConfiguration<Category>
+    public class CategoryConfigration : IEntityTypeConfiguration<Category>
     {
         public void Configure(EntityTypeBuilder<Category> builder)
         {
+            //tohumlama yani veritabanı oluşurken ilk eklenecek datalar.
+
             builder.HasKey(x => x.id); //birincil anahtarın id olmasını sağlar.
             builder.Property(x=>x.id).UseIdentityColumn(); //id sütunundakilerin birer birer artması içindir.
             builder.Property(x=>x.Name).IsRequired().HasMaxLength(50); //Name alanı nullable olamaz ve max 50 karakter olabilir.
