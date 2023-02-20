@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NLayer.Core;
 using NLayer.Repository.Configuration;
+using NLayer.Repository.UnitOfWorks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,5 +49,10 @@ namespace NLayer.Repository
 
             base.OnModelCreating(modelBuilder);
         }
+
+        /*public static implicit operator AddDbContext(AppDbContext )
+        {
+            throw new NotImplementedException();
+        }*/
     }
 }
