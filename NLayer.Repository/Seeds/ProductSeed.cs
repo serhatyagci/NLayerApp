@@ -15,12 +15,13 @@ namespace NLayer.Repository.Seeds
         {
             //tohumlama yani veritabanı oluşurken ilk eklenecek datalar.
             builder.HasData(new Product
-            { 
-                id=1, 
-                CadegoryId= 1, 
-                Name="Kalem 1",
-                Price=100, Stock=20, 
-                CreatedDate=DateTime.Now
+            {
+                id = 1,
+                CadegoryId = 1,
+                Name = "Kalem 1",
+                Price = 100,
+                Stock = 20,
+                CreatedDate = DateTime.Now
             },
             new Product
             {
@@ -48,10 +49,10 @@ namespace NLayer.Repository.Seeds
                 Price = 600,
                 Stock = 60,
                 CreatedDate = DateTime.Now
-            },            
+            },
             new Product
             {
-                id = 3-5,
+                id = 3 - 5,
                 CadegoryId = 1,
                 Name = "Kitaplar 2",
                 Price = 600,
