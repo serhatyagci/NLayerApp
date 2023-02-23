@@ -11,7 +11,7 @@ namespace NLayer.Repository.UnitOfWorks
     {
         private readonly AppDbContext _context;
 
-        public UnitOfWork(AddDbContext context)
+        public UnitOfWork(AppDbContext context)
         {
             _context = context;
         }
@@ -27,21 +27,4 @@ namespace NLayer.Repository.UnitOfWorks
         }
     }
 
-    internal class AppDbContext
-    {
-        internal void SaveChanges()
-        {
-            throw new NotImplementedException();
-        }
-
-        internal Task SaveChangesAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public static implicit operator AppDbContext(AddDbContext v)
-        {
-            throw new NotImplementedException();
-        }
-    }
 }

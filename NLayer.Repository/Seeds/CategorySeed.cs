@@ -11,6 +11,7 @@ namespace NLayer.Repository.Seeds
 {
     internal class CategorySeed : IEntityTypeConfiguration<Category>
     {
+        //tohumlama yani veritabanı oluşurken ilk eklenecek datalar.
         public void Configure(EntityTypeBuilder<Category> builder)
         {
             builder.HasData(

@@ -12,10 +12,10 @@ namespace NLayer.Repository.Repositories
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         //db işlemleri yapılabilmesi için appdbcontext nesnesi oluşturuyoruz.
-        protected readonly AddDbContext _context;
+        protected readonly AppDbContext _context;
         private readonly DbSet<T> _dbSet;
         
-        public GenericRepository(AddDbContext context)
+        public GenericRepository(AppDbContext context)
         {
             //readonly olmasının sebebi değer atılmamalı ve ctor oluşturduk, bu şekilde kulalanılmalı.
             _context = context;
@@ -39,7 +39,7 @@ namespace NLayer.Repository.Repositories
 
         public IQueryable<T> GetAll(Expression<Func<T, bool>> expression)
         {
-            return _dbSet.AsNoTracking().AsQueryable(); //asnotracking dataları memoryde tutmaz ve izlemez.
+            return _dbSet.AsNoTracking().AsQueryable(); //asnotracking dataları memoryde almaz ve izlemez. geriye asquaryable döner.
         }
 
         public async Task<T> GetByIdAsync(int id)
