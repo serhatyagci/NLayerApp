@@ -52,7 +52,7 @@ namespace NLayer.Repository.Seeds
             },
             new Product
             {
-                id = 3 - 5,
+                id = 5,
                 CadegoryId = 1,
                 Name = "Kitaplar 2",
                 Price = 600,
