@@ -16,7 +16,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-//unitofwork belirtiliyor. iunitofwork ile karþýlaþýrsa unitofwork sýnýfýný örnek alacak.
+//unitofwork belirtiliyor. iunitofwork ile karþýlaþýrsa unitofwork sýnýfýný nesne örneði alacak.
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 //generic için typeof ve <> olarak ekleniyor.
@@ -28,7 +28,7 @@ builder.Services.AddDbContext<AppDbContext>(x =>
     x.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"), option =>
     {
         //connection içine option(içine girererk) ile dinamik þekilde appdbcontex baðlýyoruz.
-        //çift týrnak içerisinde appdbcontex yazýlabilirdi ancak adýnýn deðiþmesine karþý dinamik bir yapý yazýlarak baðlantý her daim güvence altýnda kalýyor.
+        //çift týrnak içerisinde appdbcontex yazýlabilirdi aancak adýnýn deðiþmesine karþý dinamik bir yapý yazýlarak baðlantý her daim güvence altýnda kalýyor.
         option.MigrationsAssembly(Assembly.GetAssembly(typeof(AppDbContext)).GetName().Name);
     });
 });
