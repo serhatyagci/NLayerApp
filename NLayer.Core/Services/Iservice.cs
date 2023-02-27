@@ -8,7 +8,7 @@ namespace NLayer.Core.Services
         Task<IEnumerable<T>> GetAllAsync();
         IQueryable<T> where(Expression<Func<T, bool>> expression);
         Task<bool> AnyAsync(Expression<Func<T, bool>> expression);
-        Task AddAsync(T entity);
+        Task<T> AddAsync(T entity);
         Task AddRangeAsync(IEnumerable<T> entities);
         Task UpdateASync(T entity);
         Task RemoveAsync(T entity);
