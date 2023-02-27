@@ -13,8 +13,8 @@ namespace NLayer.Repository.Configuration
     {
         public void Configure(EntityTypeBuilder<ProductFeature> builder)
         {
-            builder.HasKey(x => x.id);
-            builder.Property(x => x.id).UseIdentityColumn();
+            builder.HasKey(x => x.Id);
+            builder.Property(x => x.Id).UseIdentityColumn();
             builder.HasOne(x=>x.Product).WithOne(x=>x.ProductFeature).HasForeignKey<ProductFeature>(x=>x.ProductId); //bire bir ilişki ve bire bir ilişki olduğundan foreigntkeyin hangi tabloda olacağı bilgisi verilmeli. ayrıca bu ilişkide classlarda oluşturuldu otomatik.
         }
     }

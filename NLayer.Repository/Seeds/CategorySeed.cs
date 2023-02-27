@@ -15,9 +15,9 @@ namespace NLayer.Repository.Seeds
         public void Configure(EntityTypeBuilder<Category> builder)
         {
             builder.HasData(
-                new Category { id = 1, Name = "Kalemler" }, 
-                new Category { id = 2, Name = "Kitaplar" }, 
-                new Category { id = 3, Name = "Defterler" });
+                new Category { Id = 1, Name = "Kalemler" }, 
+                new Category { Id = 2, Name = "Kitaplar" }, 
+                new Category { Id = 3, Name = "Defterler" });
         }
     }
 }

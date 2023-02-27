@@ -1,4 +1,5 @@
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Service\bin\Debug\net6.0\NLayer.Service.deps.json
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Service\bin\Debug\net6.0\NLayer.Service.runtimeconfig.json
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Service\bin\Debug\net6.0\NLayer.Service.dll
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Service\bin\Debug\net6.0\NLayer.Service.pdb
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Service\bin\Debug\net6.0\NLayer.Core.dll
@@ -14,4 +15,5 @@ C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Service\obj\Debug\net6.0\NLay
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Service\obj\Debug\net6.0\NLayer.Service.dll
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Service\obj\Debug\net6.0\refint\NLayer.Service.dll
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Service\obj\Debug\net6.0\NLayer.Service.pdb
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Service\obj\Debug\net6.0\NLayer.Service.genruntimeconfig.cache
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Service\obj\Debug\net6.0\ref\NLayer.Service.dll

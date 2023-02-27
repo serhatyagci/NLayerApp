@@ -15,8 +15,8 @@ namespace NLayer.Repository.Configuration
         {
             
 
-            builder.HasKey(x => x.id); //birincil anahtarın id olmasını sağlar.
-            builder.Property(x=>x.id).UseIdentityColumn(); //id sütunundakilerin birer birer artması içindir.
+            builder.HasKey(x => x.Id); //birincil anahtarın id olmasını sağlar.
+            builder.Property(x=>x.Id).UseIdentityColumn(); //id sütunundakilerin birer birer artması içindir.
             builder.Property(x=>x.Name).IsRequired().HasMaxLength(50); //Name alanı nullable olamaz ve max 50 karakter olabilir.
 
             builder.ToTable("Category"); //tablo ismi default olarak classsın ismidir ancak bu şekilde istenilen isim verilebilir.
