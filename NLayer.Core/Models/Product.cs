@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NLayer.Core
+namespace NLayer.Core.Models
 {
-    public class Product:BaseEntity
+    public class Product : BaseEntity
     {
         //Null olmayacak ise ctor yazılır ve nullexception hatası atar.
         /*public Product(string name)
