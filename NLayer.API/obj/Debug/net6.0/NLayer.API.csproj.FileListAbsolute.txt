@@ -122,3 +122,7 @@ C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\obj\Debug\net6.0\refint\N
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\obj\Debug\net6.0\NLayer.API.pdb
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\obj\Debug\net6.0\NLayer.API.genruntimeconfig.cache
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\obj\Debug\net6.0\ref\NLayer.API.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\NLayer.Service.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\NLayer.Service.pdb
