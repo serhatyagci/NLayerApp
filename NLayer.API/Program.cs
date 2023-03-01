@@ -5,6 +5,7 @@ using NLayer.Core.UnitOfWorks;
 using NLayer.Repository;
 using NLayer.Repository.Repositories;
 using NLayer.Repository.UnitOfWorks;
+using NLayer.Service.Mapping;
 using NLayer.Service.Services;
 using System.Reflection;
 
@@ -24,7 +25,11 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 //generic için typeof ve <> olarak ekleniyor.
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
+//servis baðlantýsý.
 builder.Services.AddScoped(typeof(Iservice<>), typeof(Service<>));
+
+//automapper baðlantýsý
+builder.Services.AddAutoMapper(typeof(MapProfile));
 
 //Ef core'a appsettingsteki connectionu kullan diyoruz.
 builder.Services.AddDbContext<AppDbContext>(x =>
