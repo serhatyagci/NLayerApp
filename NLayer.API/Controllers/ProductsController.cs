@@ -14,12 +14,22 @@ namespace NLayer.API.Controllers
     {
         private readonly IMapper _mapper;
         private readonly Iservice<Product> _service;
+        private readonly IProductService productService;
 
-        public ProductsController(Iservice<Product> service, IMapper mapper)
+        public ProductsController(Iservice<Product> service, IMapper mapper, IProductService productService)
         {
             _service = service;
             _mapper = mapper;
+            this.productService = productService;
         }
+
+        // GET ...api/products/GetProductsWithCategory şekkinde çağrılır.
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetProductsWithCategory()
+        {
+            return createActionResult(await productService.GetProductsWithCategory());
+        }
+
 
         //GET.../api/product get isteği olduğundan bu kod bloğu çalışacaktır.
         [HttpGet] //httpget isteği olduğunu belirtiyoruz. endpoint.

@@ -31,6 +31,10 @@ builder.Services.AddScoped(typeof(Iservice<>), typeof(Service<>));
 //automapper baðlantýsý
 builder.Services.AddAutoMapper(typeof(MapProfile));
 
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductService, ProductService>();
+
 //Ef core'a appsettingsteki connectionu kullan diyoruz.
 builder.Services.AddDbContext<AppDbContext>(x =>
 {
