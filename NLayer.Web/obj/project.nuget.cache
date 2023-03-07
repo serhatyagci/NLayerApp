@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "DMs8tY4Qrd4TodUKtFHvYpiZ0KlFDPQElwBmvMEeveuiCc1O83oHUSk2kuF2xGh4UwkYWOuWdLS5ABMRfgwjBA==",
+  "dgSpecHash": "USJzNB++L/yI/lL0H/csikKiF++ndbxf3vGHtYoO0cdVaBLU+yqbYg6oLt3wcWZs+iZop0yZsLWUOpgmNxVEUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\syagci\\Desktop\\SerhatApp\\NLayerApp\\NLayer.Web\\NLayer.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\syagci\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\syagci\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\syagci\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.6\\fluentvalidation.aspnetcore.10.3.6.nupkg.sha512",
+    "C:\\Users\\syagci\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

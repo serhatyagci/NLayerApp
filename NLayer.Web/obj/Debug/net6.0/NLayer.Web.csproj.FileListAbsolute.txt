@@ -71,3 +71,7 @@ C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Web\obj\Debug\net6.0\NLayer.W
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Web\obj\Debug\net6.0\ref\NLayer.Web.dll
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Web\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Web\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Web\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Web\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Web\obj\Debug\net6.0\NLayer.Web.MvcApplicationPartsAssemblyInfo.cs

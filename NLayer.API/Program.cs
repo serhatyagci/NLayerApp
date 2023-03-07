@@ -1,4 +1,8 @@
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using NLayer.API.Filters;
 using NLayer.Core.Repositories;
 using NLayer.Core.Services;
 using NLayer.Core.UnitOfWorks;
@@ -7,6 +11,7 @@ using NLayer.Repository.Repositories;
 using NLayer.Repository.UnitOfWorks;
 using NLayer.Service.Mapping;
 using NLayer.Service.Services;
+using NLayer.Service.Validations;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,6 +35,12 @@ builder.Services.AddScoped(typeof(Iservice<>), typeof(Service<>));
 
 //automapper baðlantýsý
 builder.Services.AddAutoMapper(typeof(MapProfile));
+
+//fluent validation baðlantýsý saðlanýyor ve class yolu veriliyor. ayrýca tüm controllerda kullanýlabilmesi için options yazýlýyor.
+builder.Services.AddControllers(Options => Options.Filters.Add(new ValidateFilterAttribute())).AddFluentValidation(x=>x.RegisterValidatorsFromAssemblyContaining<ProductDtoValidation>());
+
+//fluent validation filters çalýþmasý için apinin kendi hata dönen yapýsýný kapattýk.
+builder.Services.Configure<ApiBehaviorOptions>( Options => { Options.SuppressModelStateInvalidFilter = true; }) ;
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();

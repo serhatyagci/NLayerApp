@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7lIkN5GRdA+5dqqzYc7whetMEDRBz1EkDBE0/8/dj6cidf37XAi2OREbJQl5INIANpo5mWWF0N6/dzaQqg5A2w==",
+  "dgSpecHash": "1NTcNKzyOeUhqW65DvCui4+iS1ypEoYjiI68UMERaCQpandHvJOpZX6pJclt2fN5yvSaw33Gdhxt5I8kVZDQxw==",
   "success": true,
   "projectFilePath": "C:\\Users\\syagci\\Desktop\\SerhatApp\\NLayerApp\\NLayer.API\\NLayer.API.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,9 @@
     "C:\\Users\\syagci\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\epplus.core\\1.5.4\\epplus.core.1.5.4.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\evopdf.pdftoimage\\7.1.0\\evopdf.pdftoimage.7.1.0.nupkg.sha512",
+    "C:\\Users\\syagci\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\syagci\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.6\\fluentvalidation.aspnetcore.10.3.6.nupkg.sha512",
+    "C:\\Users\\syagci\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\icom\\1.0.9\\icom.1.0.9.nupkg.sha512",
