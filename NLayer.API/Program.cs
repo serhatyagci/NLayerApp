@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using NLayer.API.Filters;
+using NLayer.API.Middlewares;
 using NLayer.Core.Repositories;
 using NLayer.Core.Services;
 using NLayer.Core.UnitOfWorks;
@@ -40,7 +41,10 @@ builder.Services.AddAutoMapper(typeof(MapProfile));
 builder.Services.AddControllers(Options => Options.Filters.Add(new ValidateFilterAttribute())).AddFluentValidation(x=>x.RegisterValidatorsFromAssemblyContaining<ProductDtoValidation>());
 
 //fluent validation filters çalýþmasý için apinin kendi hata dönen yapýsýný kapattýk.
-builder.Services.Configure<ApiBehaviorOptions>( Options => { Options.SuppressModelStateInvalidFilter = true; }) ;
+builder.Services.Configure<ApiBehaviorOptions>( Options => 
+{ 
+    Options.SuppressModelStateInvalidFilter = true; 
+}) ;
 
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
@@ -69,6 +73,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCustomException(); //kendi custom middleware aktif hale getiriyoruz.
 
 app.UseAuthorization();
 
