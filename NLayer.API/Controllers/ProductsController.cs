@@ -38,6 +38,8 @@ namespace NLayer.API.Controllers
             return createActionResult(CustomResponseDto<List<ProductDto>>.Success(200, productsDtos));
         }
 
+    //action metoda girmeden filtre çalışıyor.
+    [ServiceFilter(typeof(NotFoundFilter<Product>))] //notfound filter ekleniyor. filtede constructer alındığı için servicefilterdan kullanılıyor. propgram cs e de eklenmeli ve eklendi.
         //wwww.mysite.com/api/products/5 şeklinde id 5 olan gelir gibi.
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)

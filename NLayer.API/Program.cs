@@ -24,6 +24,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//dinamik not foundu baðlýyoruz.
+builder.Services.AddScoped(typeof(NotFoundFilter<>));
 
 //unitofwork belirtiliyor. iunitofwork ile karþýlaþýrsa unitofwork sýnýfýný nesne örneði alacak.
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
