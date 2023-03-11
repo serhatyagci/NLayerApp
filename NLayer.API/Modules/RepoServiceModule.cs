@@ -12,19 +12,24 @@ using System.Reflection;
 using Module = Autofac.Module;
 namespace NLayer.API.Modules
 {
-    public class RepoServiceModule:Module
+    public class RepoServiceModule:Module //autofac module miras alınır.
     {
         protected override void Load(ContainerBuilder builder)
         {
+            //generik eklenenler
             builder.RegisterGeneric(typeof(GenericRepository<>)).As(typeof(IGenericRepository<>)).InstancePerLifetimeScope();
             builder.RegisterGeneric(typeof(Service<>)).As(typeof(Iservice<>)).InstancePerLifetimeScope();
 
+            //tek eklenen
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>();
 
-            var apiAssembly = Assembly.GetExecutingAssembly();
-            var repoAssembly = Assembly.GetAssembly(typeof(AppDbContext));
-            var serviceAssembly = Assembly.GetAssembly(typeof(MapProfile));
+            //çalışılan assemblyler alınıyor.
+            var apiAssembly = Assembly.GetExecutingAssembly(); //RepoServicemodulün çalıştığı assembly alınıyor.
+            var repoAssembly = Assembly.GetAssembly(typeof(AppDbContext)); //verilen tipin bulunduğu repository assemblysi alınıyor.
+            var serviceAssembly = Assembly.GetAssembly(typeof(MapProfile)); //verilen tipin bulunduğu servise assemblysi alınıyor.
 
+
+            //verilen assemblylerdeki sonu repository ve servis olanları al, as implementlerini al ve scope et.
             builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.Name.EndsWith("Repository")).AsImplementedInterfaces().InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.Name.EndsWith("Service")).AsImplementedInterfaces().InstancePerLifetimeScope();
             //InstancePerLifetimeScope => asp dat net core daki Scope karşılık geliyor.(aynı işi yapıyorlar.)

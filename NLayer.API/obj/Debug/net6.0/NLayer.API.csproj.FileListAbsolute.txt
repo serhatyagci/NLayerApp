@@ -129,3 +129,5 @@ C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\NLayer.S
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\Autofac.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.API\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
