@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1NTcNKzyOeUhqW65DvCui4+iS1ypEoYjiI68UMERaCQpandHvJOpZX6pJclt2fN5yvSaw33Gdhxt5I8kVZDQxw==",
+  "dgSpecHash": "XTyUtBcQpPGjExChc+zIVrJuhUcpR5xViQQwoFpDncKAQxk6hHIpwD5Wv06ncDeKbj4Wgz1bXuOOsvwJ9RhZmw==",
   "success": true,
   "projectFilePath": "C:\\Users\\syagci\\Desktop\\SerhatApp\\NLayerApp\\NLayer.API\\NLayer.API.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,8 @@
     "C:\\Users\\syagci\\.nuget\\packages\\architect.entityframework.dbcontextmanagement\\1.0.1\\architect.entityframework.dbcontextmanagement.1.0.1.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\aspnetcoreratelimit\\2.1.0\\aspnetcoreratelimit.2.1.0.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\aspose.words\\19.7.0\\aspose.words.19.7.0.nupkg.sha512",
+    "C:\\Users\\syagci\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
+    "C:\\Users\\syagci\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\syagci\\.nuget\\packages\\barcodelib\\2.2.2\\barcodelib.2.2.2.nupkg.sha512",

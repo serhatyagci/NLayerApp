@@ -1,3 +1,4 @@
+using Autofac.Extensions.DependencyInjection;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -27,14 +28,14 @@ builder.Services.AddSwaggerGen();
 //dinamik not foundu baðlýyoruz.
 builder.Services.AddScoped(typeof(NotFoundFilter<>));
 
-//unitofwork belirtiliyor. iunitofwork ile karþýlaþýrsa unitofwork sýnýfýný nesne örneði alacak.
+/*//unitofwork belirtiliyor. iunitofwork ile karþýlaþýrsa unitofwork sýnýfýný nesne örneði alacak.
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 //generic için typeof ve <> olarak ekleniyor.
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
 //servis baðlantýsý.
-builder.Services.AddScoped(typeof(Iservice<>), typeof(Service<>));
+builder.Services.AddScoped(typeof(Iservice<>), typeof(Service<>));*/
 
 //automapper baðlantýsý
 builder.Services.AddAutoMapper(typeof(MapProfile));
@@ -47,11 +48,11 @@ builder.Services.Configure<ApiBehaviorOptions>( Options =>
 { 
     Options.SuppressModelStateInvalidFilter = true; 
 }) ;
-
+/*
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IProductService, ProductService>();*/
 
 //Ef core'a appsettingsteki connectionu kullan diyoruz.
 builder.Services.AddDbContext<AppDbContext>(x =>
@@ -64,6 +65,8 @@ builder.Services.AddDbContext<AppDbContext>(x =>
     });
 });
 
+builder.Host.UseServiceProviderFactory
+    (new AutofacServiceProviderFactory());
 
 var app = builder.Build();
 
