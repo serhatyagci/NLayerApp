@@ -27,6 +27,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Cache baðlantýsý.
+builder.Services.AddMemoryCache();
+
 //dinamik not foundu baðlýyoruz.
 builder.Services.AddScoped(typeof(NotFoundFilter<>));
 
@@ -58,6 +61,7 @@ builder.Host.UseServiceProviderFactory
     (new AutofacServiceProviderFactory());
 //autofac modulunü baðlýyoruz(builder.scope olanlar buraya taþýndý.)
 builder.Host.ConfigureContainer<ContainerBuilder>(ContainerBuilder => ContainerBuilder.RegisterModule(new RepoServiceModule()));
+
 
 var app = builder.Build();
 

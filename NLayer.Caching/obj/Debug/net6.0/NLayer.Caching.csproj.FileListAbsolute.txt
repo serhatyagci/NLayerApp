@@ -12,3 +12,10 @@ C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Caching\obj\Debug\net6.0\refi
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Caching\obj\Debug\net6.0\NLayer.Caching.pdb
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Caching\obj\Debug\net6.0\NLayer.Caching.genruntimeconfig.cache
 C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Caching\obj\Debug\net6.0\ref\NLayer.Caching.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Caching\bin\Debug\net6.0\NLayer.Core.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Caching\bin\Debug\net6.0\NLayer.Repository.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Caching\bin\Debug\net6.0\NLayer.Service.dll
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Caching\bin\Debug\net6.0\NLayer.Service.pdb
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Caching\bin\Debug\net6.0\NLayer.Core.pdb
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Caching\bin\Debug\net6.0\NLayer.Repository.pdb
+C:\Users\syagci\Desktop\SerhatApp\NLayerApp\NLayer.Caching\obj\Debug\net6.0\NLayer.Caching.csproj.CopyComplete
