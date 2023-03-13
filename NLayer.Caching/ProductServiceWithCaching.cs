@@ -33,7 +33,8 @@ namespace NLayer.Caching
 
             if(!_mermoryCache.TryGetValue(CacheProductKey, out _)) //trygetvalue geriyo true dönerse out ile geriye tuttuğu veriyi döner ancak biz sadece _ koyuyoruz true false olduğunu öğreniyoruz.
             {
-                _mermoryCache.Set(CacheProductKey, _repository.GetProductsWithCategory());//eğer cache datasında yok ise memorycahce set ediyoruz, cachliyoruz. hem category hemde productları cachliyoruz.
+                //asekronu result ile sekrona dönüştürüyoruz çünkü sekron dönmeli.
+                _mermoryCache.Set(CacheProductKey, _repository.GetProductsWithCategory().Result);//eğer cache datasında yok ise memorycahce set ediyoruz, cachliyoruz. hem category hemde productları cachliyoruz.
             }
 
 
@@ -62,7 +63,8 @@ namespace NLayer.Caching
 
         public Task<IEnumerable<Product>> GetAllAsync()
         {
-            return Task.FromResult(_mermoryCache.Get<IEnumerable<Product>>(CacheProductKey));
+            var products = _mermoryCache.Get<IEnumerable<Product>>(CacheProductKey);
+            return Task.FromResult(products);
         }
 
         public Task<Product> GetByIdAsync(int id)

@@ -4404,6 +4404,19 @@
           }
         }
       },
+      "NLayer.Caching/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "NLayer.Service": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NLayer.Caching.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NLayer.Caching.dll": {}
+        }
+      },
       "NLayer.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -11808,6 +11821,11 @@
         "z.entityframework.plus.efcore.nuspec"
       ]
     },
+    "NLayer.Caching/1.0.0": {
+      "type": "project",
+      "path": "../NLayer.Caching/NLayer.Caching.csproj",
+      "msbuildProject": "../NLayer.Caching/NLayer.Caching.csproj"
+    },
     "NLayer.Core/1.0.0": {
       "type": "project",
       "path": "../NLayer.Core/NLayer.Core.csproj",
@@ -11830,8 +11848,8 @@
       "Autofac.Extensions.DependencyInjection >= 7.2.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.1",
+      "NLayer.Caching >= 1.0.0",
       "NLayer.Repository >= 1.0.0",
-      "NLayer.Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3",
       "iCom >= 1.0.9"
     ]
@@ -11863,11 +11881,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\syagci\\Desktop\\SerhatApp\\NLayerApp\\NLayer.Caching\\NLayer.Caching.csproj": {
+              "projectPath": "C:\\Users\\syagci\\Desktop\\SerhatApp\\NLayerApp\\NLayer.Caching\\NLayer.Caching.csproj"
+            },
             "C:\\Users\\syagci\\Desktop\\SerhatApp\\NLayerApp\\NLayer.Repository\\NLayer.Repository.csproj": {
               "projectPath": "C:\\Users\\syagci\\Desktop\\SerhatApp\\NLayerApp\\NLayer.Repository\\NLayer.Repository.csproj"
-            },
-            "C:\\Users\\syagci\\Desktop\\SerhatApp\\NLayerApp\\NLayer.Service\\NLayer.Service.csproj": {
-              "projectPath": "C:\\Users\\syagci\\Desktop\\SerhatApp\\NLayerApp\\NLayer.Service\\NLayer.Service.csproj"
             }
           }
         }
